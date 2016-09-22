@@ -31,3 +31,6 @@ Comparing to the very commonly used data augmentation, TI-pooling finds canonica
 One needs to be really sure to introduce transformation-invariance: in some real-world problems some transformation can seem like an nuisance factor, but can be in fact useful. E.g. rotation-invariance proved does not work well for natural objects, because most natural objects have a "default" orientation, which helps us to recognize them (an upside-down animal is usually harder to recognize, not only for a CNN, but also for a human being). Same rotation-invariance proved to be very useful for cell recognition, where orientation is essentially random.
 
 Also, while training time is comparable and usually faster than with data augmentation, the testing time increases linearly with the number of transformations.
+
+### Instructions for Linux
+First run ./setup.sh to download the dataset. Then run "th rot_mnist12K.lua" to start training. The code was tested for torch commit ed547376d552346afc69a937c6b36cf9ea9d1135 (12 September 2016).

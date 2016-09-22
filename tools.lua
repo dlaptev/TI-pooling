@@ -2,7 +2,6 @@
 --   load_rotated_mnist(file_name, count)
 --   get_transformed(batch_inputs, opt)
 --   calculate_error(model, data_to_check, opt)
---   convergent_adadelta(opfunc, x, config, state)
 
 -- Loads the dataset from an .amat file.
 function load_rotated_mnist(file_name, count)
@@ -80,38 +79,3 @@ function calculate_error(model, data_to_check, opt)
   return error / data_size
 end
 
--- Optimization subroutine: given a functional and its gradient, makes a step
--- minimizing the functional opfunc.
-function convergent_adadelta(opfunc, x, config, state)
-    -- (0) get/update state
-    local state = state or {}
-    state.rho = state.adadelta_rho or 0.9
-    state.eps = state.adadelta_eps or 1e-6
-    state.evalCounter = state.evalCounter or 0
-
-    -- (1) evaluate f(x) and df/dx
-    local fx,dfdx = opfunc(x)
-
-    -- (2) parameter update
-    if not state.paramVariance then
-        state.paramVariance = torch.Tensor():typeAs(x):resizeAs(dfdx):zero()
-        state.paramStd = torch.Tensor():typeAs(x):resizeAs(dfdx):zero()
-        state.delta = torch.Tensor():typeAs(x):resizeAs(dfdx):zero()
-        state.accDelta = torch.Tensor():typeAs(x):resizeAs(dfdx):zero()
-        state.step = 1
-    end
-    state.paramVariance:mul(state.rho):addcmul(1 - state.rho,dfdx,dfdx)
-    state.paramStd:resizeAs(state.paramVariance):copy(state.paramVariance)
-        :add(state.eps):sqrt()
-    state.delta:resizeAs(state.paramVariance):copy(state.accDelta)
-        :add(state.eps):sqrt():cdiv(state.paramStd):cmul(dfdx)
-    x:add(-state.step, state.delta)
-    state.accDelta:mul(state.rho)
-        :addcmul(1 - state.rho, state.delta, state.delta)
-
-    -- (3) update evaluation counter
-    state.evalCounter = state.evalCounter + 1
-
-    -- return x*, f(x) before optimization
-    return x,{fx}
-end

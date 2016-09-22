@@ -3,6 +3,7 @@ require 'math'
 require 'nn'
 require 'cunn'
 require 'image'
+require 'optim'
 
 require 'rot_mnist12K_model'
 require 'tools'
@@ -98,10 +99,7 @@ while true do -- Cycle through the batches.
     torch.save(opt.model_dump_name .. '_state', optim_state)
     torch.manualSeed(epoch)
   end
-  if (counter == 0) and (epoch % opt.decrease_step_size == 0) then
-    optim_state.step = optim_state.step / 2
-  end
   -- Make a step using AdaDelta optimization algorithm (updates parameters).
-  convergent_adadelta(batch_feval, parameters, optim_state)
+  optim.adadelta(batch_feval, parameters, optim_state)
   collectgarbage()
 end
