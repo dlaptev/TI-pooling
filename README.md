@@ -6,6 +6,8 @@ This repository contains a Torch7 implementation of TI-pooling (transformation-i
 
 The paper provides experimental evaluation on three datasets. This repository contains source codes for one of these experiments: [mnist-rot dataset](http://www.iro.umontreal.ca/~lisa/twiki/bin/view.cgi/Public/MnistVariations), consisting of 12k training images of randomly rotated digits.
 
+**Update.** The results in section 4.1.1 of the paper are now updated. In the original version of the paper we mistakenly reported larger error than the one actually achieved (should be *1.2%* instead of *2.2%*). Sorry for the inconvenience.
+
 ### What is TI-pooling?
 TI-pooling is a simple technique that allows to make a Convolutional Neural Networks (CNN) transformation-invariant. I.e. given a set of nuisance transformations (such as rotations, scale, shifts, illumination changes, etc.), TI-pooling guarantees that the output of the network will not to depend on whether the input image was transformed or not.
 
