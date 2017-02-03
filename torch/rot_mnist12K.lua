@@ -24,8 +24,8 @@ local opt = define_constants()
 
 -- Load and unzip "Rotated MNIST digits" dataset from the following address:
 -- http://www.iro.umontreal.ca/~lisa/twiki/bin/view.cgi/Public/MnistVariations
-local train_file = 'mnist_all_rotation_normalized_float_train_valid.amat'
-local test_file = 'mnist_all_rotation_normalized_float_test.amat'
+local train_file = '../mnist_all_rotation_normalized_float_train_valid.amat'
+local test_file = '../mnist_all_rotation_normalized_float_test.amat'
 local train = load_rotated_mnist(train_file, -1)
 local test = load_rotated_mnist(test_file, -1)
 local n_train_data = train.data:size(1) -- Number of training samples.
