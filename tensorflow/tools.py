@@ -3,26 +3,45 @@ import math
 from scipy.ndimage.interpolation import rotate
 
 class DataLoader:
-  def __init__(self, name, number_of_classes, number_of_rotations):
+  def __init__(self,
+               name,
+               number_of_classes,
+               number_of_transformations,
+               loaded_size,
+               desired_size,
+               max_size=None):
     loaded = np.loadtxt(name)
-    # loaded = loaded[np.random.choice(loaded.shape[0], 1000, replace=False), :]
-    self._x = self._transform(loaded, number_of_rotations)
+    if max_size is not None:
+      subset = np.random.choice(loaded.shape[0], max_size, replace=False)
+      loaded = loaded[subset, :]
+    padded_x = self._pad(loaded[:, :-1], loaded_size, desired_size)
+    self._x = self._transform(padded_x, number_of_transformations)
     self._y = self._int_labels_to_one_hot(loaded[:, -1], number_of_classes)
     self._completed_epochs = -1
     self._new_epoch = False
     self._start_new_epoch()
 
-  def _transform(self, loaded, number_of_rotations):
-    # pad it and populate along the last dimension; then rotate
-    padded = np.pad(np.reshape(loaded[:, :-1], [-1, 28, 28, 1]), [[0, 0], [2, 2], [2, 2], [0, 0]], 'constant', constant_values=0)
-    tiled = np.tile(np.expand_dims(padded, 4), [number_of_rotations])
-    for rotation_index in xrange(number_of_rotations):
-      angle = 360.0 * rotation_index / float(number_of_rotations)
-      tiled[:, :, :, :, rotation_index] = rotate(tiled[:, :, :, :, rotation_index],
-                                                 angle,
-                                                 axes=[1, 2],
-                                                 reshape=False)
-    print('finished rotating')
+  def _pad(self, loaded_x, loaded_size, desired_size):
+    padding_size = (desired_size - loaded_size) / 2
+    padding_list = [[0, 0],
+                    [padding_size, padding_size],
+                    [padding_size, padding_size],
+                    [0, 0]]
+    return np.pad(np.reshape(loaded_x, [-1, loaded_size, loaded_size, 1]),
+                  padding_list,
+                  'constant',
+                  constant_values=0)
+
+  def _transform(self, padded, number_of_transformations):
+    tiled = np.tile(np.expand_dims(padded, 4), [number_of_transformations])
+    for transformation_index in xrange(number_of_transformations):
+      angle = 360.0 * transformation_index / float(number_of_transformations)
+      tiled[:, :, :, :, transformation_index] = rotate(
+          tiled[:, :, :, :, transformation_index],
+          angle,
+          axes=[1, 2],
+          reshape=False)
+    print('finished transforming')
     return tiled
 
   def _int_labels_to_one_hot(self, int_labels, number_of_classes):
