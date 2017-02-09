@@ -1,18 +1,28 @@
 import numpy as np
+import math
+from scipy.ndimage.interpolation import rotate
 
 class DataLoader:
   def __init__(self, name, number_of_classes, number_of_rotations):
     loaded = np.loadtxt(name)
-    self._x = self._preprocess(loaded, number_of_rotations)
+    # loaded = loaded[np.random.choice(loaded.shape[0], 1000, replace=False), :]
+    self._x = self._transform(loaded, number_of_rotations)
     self._y = self._int_labels_to_one_hot(loaded[:, -1], number_of_classes)
     self._completed_epochs = -1
     self._new_epoch = False
     self._start_new_epoch()
 
-  def _preprocess(self, loaded, number_of_rotations):
-    # need to pad it and populate along the last dimension; then write bilinear interpolation
+  def _transform(self, loaded, number_of_rotations):
+    # pad it and populate along the last dimension; then rotate
     padded = np.pad(np.reshape(loaded[:, :-1], [-1, 28, 28, 1]), [[0, 0], [2, 2], [2, 2], [0, 0]], 'constant', constant_values=0)
     tiled = np.tile(np.expand_dims(padded, 4), [number_of_rotations])
+    for rotation_index in xrange(number_of_rotations):
+      angle = 360.0 * rotation_index / float(number_of_rotations)
+      tiled[:, :, :, :, rotation_index] = rotate(tiled[:, :, :, :, rotation_index],
+                                                 angle,
+                                                 axes=[1, 2],
+                                                 reshape=False)
+    print('finished rotating')
     return tiled
 
   def _int_labels_to_one_hot(self, int_labels, number_of_classes):

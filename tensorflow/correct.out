@@ -1,0 +1,671 @@
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcublas.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcudnn.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcufft.so locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcuda.so.1 locally
+I tensorflow/stream_executor/dso_loader.cc:111] successfully opened CUDA library libcurand.so locally
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:951] Found device 0 with properties: 
+name: GeForce GTX TITAN X
+major: 5 minor: 2 memoryClockRate (GHz) 1.076
+pciBusID 0000:82:00.0
+Total memory: 12.00GiB
+Free memory: 11.87GiB
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:972] DMA: 0 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:982] 0:   Y 
+I tensorflow/core/common_runtime/gpu/gpu_device.cc:1041] Creating TensorFlow device (/gpu:0) -> (device: 0, name: GeForce GTX TITAN X, pci bus id: 0000:82:00.0)
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:245] PoolAllocator: After 1525 get requests, put_count=1512 evicted_count=1000 eviction_rate=0.661376 and unsatisfied allocation rate=0.729836
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:257] Raising pool_size_limit_ from 100 to 110
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:245] PoolAllocator: After 6710 get requests, put_count=6721 evicted_count=1000 eviction_rate=0.148787 and unsatisfied allocation rate=0.15082
+I tensorflow/core/common_runtime/gpu/pool_allocator.cc:257] Raising pool_size_limit_ from 256 to 281
+finished rotating
+finished rotating
+completed_epochs 1, training accuracy 0.890625
+completed_epochs 2, training accuracy 0.828125
+completed_epochs 3, training accuracy 0.953125
+completed_epochs 4, training accuracy 0.96875
+completed_epochs 5, training accuracy 0.96875
+completed_epochs 6, training accuracy 1
+completed_epochs 7, training accuracy 0.96875
+completed_epochs 8, training accuracy 1
+completed_epochs 9, training accuracy 0.953125
+completed_epochs 10, training accuracy 1
+testing accuracy 0.97706
+completed_epochs 11, training accuracy 1
+completed_epochs 12, training accuracy 0.953125
+completed_epochs 13, training accuracy 0.984375
+completed_epochs 14, training accuracy 1
+completed_epochs 15, training accuracy 0.984375
+completed_epochs 16, training accuracy 0.96875
+completed_epochs 17, training accuracy 1
+completed_epochs 18, training accuracy 1
+completed_epochs 19, training accuracy 1
+completed_epochs 20, training accuracy 0.984375
+testing accuracy 0.97794
+completed_epochs 21, training accuracy 1
+completed_epochs 22, training accuracy 1
+completed_epochs 23, training accuracy 0.984375
+completed_epochs 24, training accuracy 1
+completed_epochs 25, training accuracy 1
+completed_epochs 26, training accuracy 1
+completed_epochs 27, training accuracy 1
+completed_epochs 28, training accuracy 1
+completed_epochs 29, training accuracy 1
+completed_epochs 30, training accuracy 1
+testing accuracy 0.98222
+completed_epochs 31, training accuracy 1
+completed_epochs 32, training accuracy 1
+completed_epochs 33, training accuracy 1
+completed_epochs 34, training accuracy 1
+completed_epochs 35, training accuracy 1
+completed_epochs 36, training accuracy 0.984375
+completed_epochs 37, training accuracy 1
+completed_epochs 38, training accuracy 1
+completed_epochs 39, training accuracy 1
+completed_epochs 40, training accuracy 1
+testing accuracy 0.97624
+completed_epochs 41, training accuracy 1
+completed_epochs 42, training accuracy 1
+completed_epochs 43, training accuracy 1
+completed_epochs 44, training accuracy 1
+completed_epochs 45, training accuracy 1
+completed_epochs 46, training accuracy 1
+completed_epochs 47, training accuracy 1
+completed_epochs 48, training accuracy 1
+completed_epochs 49, training accuracy 0.984375
+completed_epochs 50, training accuracy 1
+testing accuracy 0.9852
+completed_epochs 51, training accuracy 1
+completed_epochs 52, training accuracy 1
+completed_epochs 53, training accuracy 1
+completed_epochs 54, training accuracy 1
+completed_epochs 55, training accuracy 1
+completed_epochs 56, training accuracy 1
+completed_epochs 57, training accuracy 1
+completed_epochs 58, training accuracy 1
+completed_epochs 59, training accuracy 1
+completed_epochs 60, training accuracy 1
+testing accuracy 0.98372
+completed_epochs 61, training accuracy 1
+completed_epochs 62, training accuracy 1
+completed_epochs 63, training accuracy 1
+completed_epochs 64, training accuracy 1
+completed_epochs 65, training accuracy 1
+completed_epochs 66, training accuracy 1
+completed_epochs 67, training accuracy 1
+completed_epochs 68, training accuracy 1
+completed_epochs 69, training accuracy 1
+completed_epochs 70, training accuracy 1
+testing accuracy 0.98534
+completed_epochs 71, training accuracy 1
+completed_epochs 72, training accuracy 1
+completed_epochs 73, training accuracy 1
+completed_epochs 74, training accuracy 1
+completed_epochs 75, training accuracy 1
+completed_epochs 76, training accuracy 1
+completed_epochs 77, training accuracy 1
+completed_epochs 78, training accuracy 1
+completed_epochs 79, training accuracy 1
+completed_epochs 80, training accuracy 1
+testing accuracy 0.98544
+completed_epochs 81, training accuracy 1
+completed_epochs 82, training accuracy 1
+completed_epochs 83, training accuracy 1
+completed_epochs 84, training accuracy 1
+completed_epochs 85, training accuracy 1
+completed_epochs 86, training accuracy 1
+completed_epochs 87, training accuracy 1
+completed_epochs 88, training accuracy 1
+completed_epochs 89, training accuracy 0.984375
+completed_epochs 90, training accuracy 1
+testing accuracy 0.98364
+completed_epochs 91, training accuracy 1
+completed_epochs 92, training accuracy 1
+completed_epochs 93, training accuracy 1
+completed_epochs 94, training accuracy 1
+completed_epochs 95, training accuracy 1
+completed_epochs 96, training accuracy 1
+completed_epochs 97, training accuracy 1
+completed_epochs 98, training accuracy 1
+completed_epochs 99, training accuracy 1
+completed_epochs 100, training accuracy 1
+testing accuracy 0.98536
+completed_epochs 101, training accuracy 1
+completed_epochs 102, training accuracy 1
+completed_epochs 103, training accuracy 1
+completed_epochs 104, training accuracy 1
+completed_epochs 105, training accuracy 1
+completed_epochs 106, training accuracy 1
+completed_epochs 107, training accuracy 1
+completed_epochs 108, training accuracy 1
+completed_epochs 109, training accuracy 1
+completed_epochs 110, training accuracy 1
+testing accuracy 0.98192
+completed_epochs 111, training accuracy 1
+completed_epochs 112, training accuracy 1
+completed_epochs 113, training accuracy 1
+completed_epochs 114, training accuracy 1
+completed_epochs 115, training accuracy 1
+completed_epochs 116, training accuracy 1
+completed_epochs 117, training accuracy 1
+completed_epochs 118, training accuracy 1
+completed_epochs 119, training accuracy 1
+completed_epochs 120, training accuracy 1
+testing accuracy 0.98626
+completed_epochs 121, training accuracy 1
+completed_epochs 122, training accuracy 1
+completed_epochs 123, training accuracy 1
+completed_epochs 124, training accuracy 1
+completed_epochs 125, training accuracy 1
+completed_epochs 126, training accuracy 1
+completed_epochs 127, training accuracy 1
+completed_epochs 128, training accuracy 1
+completed_epochs 129, training accuracy 1
+completed_epochs 130, training accuracy 1
+testing accuracy 0.98692
+completed_epochs 131, training accuracy 1
+completed_epochs 132, training accuracy 1
+completed_epochs 133, training accuracy 1
+completed_epochs 134, training accuracy 1
+completed_epochs 135, training accuracy 1
+completed_epochs 136, training accuracy 1
+completed_epochs 137, training accuracy 1
+completed_epochs 138, training accuracy 1
+completed_epochs 139, training accuracy 1
+completed_epochs 140, training accuracy 1
+testing accuracy 0.98594
+completed_epochs 141, training accuracy 1
+completed_epochs 142, training accuracy 1
+completed_epochs 143, training accuracy 1
+completed_epochs 144, training accuracy 1
+completed_epochs 145, training accuracy 1
+completed_epochs 146, training accuracy 1
+completed_epochs 147, training accuracy 1
+completed_epochs 148, training accuracy 1
+completed_epochs 149, training accuracy 1
+completed_epochs 150, training accuracy 1
+testing accuracy 0.987
+completed_epochs 151, training accuracy 1
+completed_epochs 152, training accuracy 1
+completed_epochs 153, training accuracy 1
+completed_epochs 154, training accuracy 1
+completed_epochs 155, training accuracy 1
+completed_epochs 156, training accuracy 1
+completed_epochs 157, training accuracy 1
+completed_epochs 158, training accuracy 1
+completed_epochs 159, training accuracy 1
+completed_epochs 160, training accuracy 1
+testing accuracy 0.98604
+completed_epochs 161, training accuracy 1
+completed_epochs 162, training accuracy 1
+completed_epochs 163, training accuracy 1
+completed_epochs 164, training accuracy 1
+completed_epochs 165, training accuracy 1
+completed_epochs 166, training accuracy 1
+completed_epochs 167, training accuracy 1
+completed_epochs 168, training accuracy 1
+completed_epochs 169, training accuracy 1
+completed_epochs 170, training accuracy 1
+testing accuracy 0.98712
+completed_epochs 171, training accuracy 1
+completed_epochs 172, training accuracy 1
+completed_epochs 173, training accuracy 1
+completed_epochs 174, training accuracy 1
+completed_epochs 175, training accuracy 1
+completed_epochs 176, training accuracy 1
+completed_epochs 177, training accuracy 1
+completed_epochs 178, training accuracy 1
+completed_epochs 179, training accuracy 1
+completed_epochs 180, training accuracy 1
+testing accuracy 0.9853
+completed_epochs 181, training accuracy 1
+completed_epochs 182, training accuracy 1
+completed_epochs 183, training accuracy 1
+completed_epochs 184, training accuracy 1
+completed_epochs 185, training accuracy 1
+completed_epochs 186, training accuracy 1
+completed_epochs 187, training accuracy 1
+completed_epochs 188, training accuracy 1
+completed_epochs 189, training accuracy 1
+completed_epochs 190, training accuracy 1
+testing accuracy 0.98684
+completed_epochs 191, training accuracy 1
+completed_epochs 192, training accuracy 1
+completed_epochs 193, training accuracy 1
+completed_epochs 194, training accuracy 1
+completed_epochs 195, training accuracy 1
+completed_epochs 196, training accuracy 1
+completed_epochs 197, training accuracy 1
+completed_epochs 198, training accuracy 1
+completed_epochs 199, training accuracy 1
+completed_epochs 200, training accuracy 1
+testing accuracy 0.98602
+completed_epochs 201, training accuracy 1
+completed_epochs 202, training accuracy 1
+completed_epochs 203, training accuracy 1
+completed_epochs 204, training accuracy 1
+completed_epochs 205, training accuracy 1
+completed_epochs 206, training accuracy 1
+completed_epochs 207, training accuracy 1
+completed_epochs 208, training accuracy 1
+completed_epochs 209, training accuracy 1
+completed_epochs 210, training accuracy 1
+testing accuracy 0.9872
+completed_epochs 211, training accuracy 1
+completed_epochs 212, training accuracy 1
+completed_epochs 213, training accuracy 1
+completed_epochs 214, training accuracy 1
+completed_epochs 215, training accuracy 1
+completed_epochs 216, training accuracy 1
+completed_epochs 217, training accuracy 1
+completed_epochs 218, training accuracy 1
+completed_epochs 219, training accuracy 1
+completed_epochs 220, training accuracy 1
+testing accuracy 0.98648
+completed_epochs 221, training accuracy 1
+completed_epochs 222, training accuracy 1
+completed_epochs 223, training accuracy 1
+completed_epochs 224, training accuracy 1
+completed_epochs 225, training accuracy 1
+completed_epochs 226, training accuracy 1
+completed_epochs 227, training accuracy 1
+completed_epochs 228, training accuracy 1
+completed_epochs 229, training accuracy 1
+completed_epochs 230, training accuracy 1
+testing accuracy 0.98646
+completed_epochs 231, training accuracy 1
+completed_epochs 232, training accuracy 1
+completed_epochs 233, training accuracy 1
+completed_epochs 234, training accuracy 1
+completed_epochs 235, training accuracy 1
+completed_epochs 236, training accuracy 1
+completed_epochs 237, training accuracy 1
+completed_epochs 238, training accuracy 1
+completed_epochs 239, training accuracy 1
+completed_epochs 240, training accuracy 1
+testing accuracy 0.9848
+completed_epochs 241, training accuracy 1
+completed_epochs 242, training accuracy 1
+completed_epochs 243, training accuracy 1
+completed_epochs 244, training accuracy 1
+completed_epochs 245, training accuracy 1
+completed_epochs 246, training accuracy 1
+completed_epochs 247, training accuracy 1
+completed_epochs 248, training accuracy 1
+completed_epochs 249, training accuracy 1
+completed_epochs 250, training accuracy 1
+testing accuracy 0.98632
+completed_epochs 251, training accuracy 1
+completed_epochs 252, training accuracy 1
+completed_epochs 253, training accuracy 1
+completed_epochs 254, training accuracy 1
+completed_epochs 255, training accuracy 1
+completed_epochs 256, training accuracy 1
+completed_epochs 257, training accuracy 1
+completed_epochs 258, training accuracy 1
+completed_epochs 259, training accuracy 1
+completed_epochs 260, training accuracy 1
+testing accuracy 0.98514
+completed_epochs 261, training accuracy 1
+completed_epochs 262, training accuracy 1
+completed_epochs 263, training accuracy 1
+completed_epochs 264, training accuracy 1
+completed_epochs 265, training accuracy 1
+completed_epochs 266, training accuracy 1
+completed_epochs 267, training accuracy 1
+completed_epochs 268, training accuracy 1
+completed_epochs 269, training accuracy 1
+completed_epochs 270, training accuracy 1
+testing accuracy 0.98704
+completed_epochs 271, training accuracy 1
+completed_epochs 272, training accuracy 1
+completed_epochs 273, training accuracy 1
+completed_epochs 274, training accuracy 1
+completed_epochs 275, training accuracy 1
+completed_epochs 276, training accuracy 1
+completed_epochs 277, training accuracy 1
+completed_epochs 278, training accuracy 1
+completed_epochs 279, training accuracy 1
+completed_epochs 280, training accuracy 1
+testing accuracy 0.98748
+completed_epochs 281, training accuracy 1
+completed_epochs 282, training accuracy 1
+completed_epochs 283, training accuracy 1
+completed_epochs 284, training accuracy 1
+completed_epochs 285, training accuracy 1
+completed_epochs 286, training accuracy 1
+completed_epochs 287, training accuracy 1
+completed_epochs 288, training accuracy 1
+completed_epochs 289, training accuracy 1
+completed_epochs 290, training accuracy 1
+testing accuracy 0.98612
+completed_epochs 291, training accuracy 1
+completed_epochs 292, training accuracy 1
+completed_epochs 293, training accuracy 1
+completed_epochs 294, training accuracy 1
+completed_epochs 295, training accuracy 1
+completed_epochs 296, training accuracy 1
+completed_epochs 297, training accuracy 1
+completed_epochs 298, training accuracy 1
+completed_epochs 299, training accuracy 1
+completed_epochs 300, training accuracy 1
+testing accuracy 0.98766
+completed_epochs 301, training accuracy 1
+completed_epochs 302, training accuracy 1
+completed_epochs 303, training accuracy 1
+completed_epochs 304, training accuracy 1
+completed_epochs 305, training accuracy 1
+completed_epochs 306, training accuracy 1
+completed_epochs 307, training accuracy 1
+completed_epochs 308, training accuracy 1
+completed_epochs 309, training accuracy 1
+completed_epochs 310, training accuracy 1
+testing accuracy 0.9875
+completed_epochs 311, training accuracy 1
+completed_epochs 312, training accuracy 1
+completed_epochs 313, training accuracy 1
+completed_epochs 314, training accuracy 1
+completed_epochs 315, training accuracy 1
+completed_epochs 316, training accuracy 1
+completed_epochs 317, training accuracy 1
+completed_epochs 318, training accuracy 1
+completed_epochs 319, training accuracy 1
+completed_epochs 320, training accuracy 1
+testing accuracy 0.98708
+completed_epochs 321, training accuracy 1
+completed_epochs 322, training accuracy 1
+completed_epochs 323, training accuracy 1
+completed_epochs 324, training accuracy 1
+completed_epochs 325, training accuracy 1
+completed_epochs 326, training accuracy 1
+completed_epochs 327, training accuracy 1
+completed_epochs 328, training accuracy 1
+completed_epochs 329, training accuracy 1
+completed_epochs 330, training accuracy 1
+testing accuracy 0.98774
+completed_epochs 331, training accuracy 1
+completed_epochs 332, training accuracy 1
+completed_epochs 333, training accuracy 1
+completed_epochs 334, training accuracy 1
+completed_epochs 335, training accuracy 1
+completed_epochs 336, training accuracy 1
+completed_epochs 337, training accuracy 1
+completed_epochs 338, training accuracy 1
+completed_epochs 339, training accuracy 1
+completed_epochs 340, training accuracy 1
+testing accuracy 0.98596
+completed_epochs 341, training accuracy 1
+completed_epochs 342, training accuracy 1
+completed_epochs 343, training accuracy 1
+completed_epochs 344, training accuracy 1
+completed_epochs 345, training accuracy 1
+completed_epochs 346, training accuracy 1
+completed_epochs 347, training accuracy 1
+completed_epochs 348, training accuracy 1
+completed_epochs 349, training accuracy 1
+completed_epochs 350, training accuracy 1
+testing accuracy 0.98504
+completed_epochs 351, training accuracy 1
+completed_epochs 352, training accuracy 1
+completed_epochs 353, training accuracy 1
+completed_epochs 354, training accuracy 1
+completed_epochs 355, training accuracy 1
+completed_epochs 356, training accuracy 1
+completed_epochs 357, training accuracy 1
+completed_epochs 358, training accuracy 1
+completed_epochs 359, training accuracy 1
+completed_epochs 360, training accuracy 1
+testing accuracy 0.98732
+completed_epochs 361, training accuracy 1
+completed_epochs 362, training accuracy 1
+completed_epochs 363, training accuracy 1
+completed_epochs 364, training accuracy 1
+completed_epochs 365, training accuracy 1
+completed_epochs 366, training accuracy 1
+completed_epochs 367, training accuracy 1
+completed_epochs 368, training accuracy 1
+completed_epochs 369, training accuracy 1
+completed_epochs 370, training accuracy 1
+testing accuracy 0.98724
+completed_epochs 371, training accuracy 1
+completed_epochs 372, training accuracy 1
+completed_epochs 373, training accuracy 1
+completed_epochs 374, training accuracy 1
+completed_epochs 375, training accuracy 1
+completed_epochs 376, training accuracy 1
+completed_epochs 377, training accuracy 1
+completed_epochs 378, training accuracy 1
+completed_epochs 379, training accuracy 1
+completed_epochs 380, training accuracy 1
+testing accuracy 0.98766
+completed_epochs 381, training accuracy 1
+completed_epochs 382, training accuracy 1
+completed_epochs 383, training accuracy 1
+completed_epochs 384, training accuracy 1
+completed_epochs 385, training accuracy 1
+completed_epochs 386, training accuracy 1
+completed_epochs 387, training accuracy 1
+completed_epochs 388, training accuracy 1
+completed_epochs 389, training accuracy 1
+completed_epochs 390, training accuracy 1
+testing accuracy 0.98766
+completed_epochs 391, training accuracy 1
+completed_epochs 392, training accuracy 1
+completed_epochs 393, training accuracy 1
+completed_epochs 394, training accuracy 1
+completed_epochs 395, training accuracy 1
+completed_epochs 396, training accuracy 1
+completed_epochs 397, training accuracy 1
+completed_epochs 398, training accuracy 1
+completed_epochs 399, training accuracy 1
+completed_epochs 400, training accuracy 1
+testing accuracy 0.98694
+completed_epochs 401, training accuracy 1
+completed_epochs 402, training accuracy 1
+completed_epochs 403, training accuracy 1
+completed_epochs 404, training accuracy 1
+completed_epochs 405, training accuracy 1
+completed_epochs 406, training accuracy 1
+completed_epochs 407, training accuracy 1
+completed_epochs 408, training accuracy 1
+completed_epochs 409, training accuracy 1
+completed_epochs 410, training accuracy 1
+testing accuracy 0.98636
+completed_epochs 411, training accuracy 1
+completed_epochs 412, training accuracy 1
+completed_epochs 413, training accuracy 1
+completed_epochs 414, training accuracy 1
+completed_epochs 415, training accuracy 1
+completed_epochs 416, training accuracy 1
+completed_epochs 417, training accuracy 1
+completed_epochs 418, training accuracy 1
+completed_epochs 419, training accuracy 1
+completed_epochs 420, training accuracy 1
+testing accuracy 0.98774
+completed_epochs 421, training accuracy 1
+completed_epochs 422, training accuracy 1
+completed_epochs 423, training accuracy 1
+completed_epochs 424, training accuracy 1
+completed_epochs 425, training accuracy 1
+completed_epochs 426, training accuracy 1
+completed_epochs 427, training accuracy 1
+completed_epochs 428, training accuracy 1
+completed_epochs 429, training accuracy 1
+completed_epochs 430, training accuracy 1
+testing accuracy 0.98722
+completed_epochs 431, training accuracy 1
+completed_epochs 432, training accuracy 1
+completed_epochs 433, training accuracy 1
+completed_epochs 434, training accuracy 1
+completed_epochs 435, training accuracy 1
+completed_epochs 436, training accuracy 1
+completed_epochs 437, training accuracy 1
+completed_epochs 438, training accuracy 1
+completed_epochs 439, training accuracy 1
+completed_epochs 440, training accuracy 1
+testing accuracy 0.98586
+completed_epochs 441, training accuracy 1
+completed_epochs 442, training accuracy 1
+completed_epochs 443, training accuracy 1
+completed_epochs 444, training accuracy 1
+completed_epochs 445, training accuracy 1
+completed_epochs 446, training accuracy 1
+completed_epochs 447, training accuracy 1
+completed_epochs 448, training accuracy 1
+completed_epochs 449, training accuracy 1
+completed_epochs 450, training accuracy 1
+testing accuracy 0.98678
+completed_epochs 451, training accuracy 1
+completed_epochs 452, training accuracy 1
+completed_epochs 453, training accuracy 1
+completed_epochs 454, training accuracy 1
+completed_epochs 455, training accuracy 1
+completed_epochs 456, training accuracy 1
+completed_epochs 457, training accuracy 1
+completed_epochs 458, training accuracy 1
+completed_epochs 459, training accuracy 1
+completed_epochs 460, training accuracy 1
+testing accuracy 0.98734
+completed_epochs 461, training accuracy 1
+completed_epochs 462, training accuracy 1
+completed_epochs 463, training accuracy 1
+completed_epochs 464, training accuracy 1
+completed_epochs 465, training accuracy 1
+completed_epochs 466, training accuracy 1
+completed_epochs 467, training accuracy 1
+completed_epochs 468, training accuracy 1
+completed_epochs 469, training accuracy 1
+completed_epochs 470, training accuracy 1
+testing accuracy 0.98622
+completed_epochs 471, training accuracy 1
+completed_epochs 472, training accuracy 1
+completed_epochs 473, training accuracy 1
+completed_epochs 474, training accuracy 1
+completed_epochs 475, training accuracy 1
+completed_epochs 476, training accuracy 1
+completed_epochs 477, training accuracy 1
+completed_epochs 478, training accuracy 1
+completed_epochs 479, training accuracy 1
+completed_epochs 480, training accuracy 1
+testing accuracy 0.98618
+completed_epochs 481, training accuracy 1
+completed_epochs 482, training accuracy 1
+completed_epochs 483, training accuracy 1
+completed_epochs 484, training accuracy 1
+completed_epochs 485, training accuracy 1
+completed_epochs 486, training accuracy 1
+completed_epochs 487, training accuracy 1
+completed_epochs 488, training accuracy 1
+completed_epochs 489, training accuracy 1
+completed_epochs 490, training accuracy 1
+testing accuracy 0.98688
+completed_epochs 491, training accuracy 1
+completed_epochs 492, training accuracy 1
+completed_epochs 493, training accuracy 1
+completed_epochs 494, training accuracy 1
+completed_epochs 495, training accuracy 1
+completed_epochs 496, training accuracy 1
+completed_epochs 497, training accuracy 1
+completed_epochs 498, training accuracy 1
+completed_epochs 499, training accuracy 1
+completed_epochs 500, training accuracy 1
+testing accuracy 0.98756
+completed_epochs 501, training accuracy 1
+completed_epochs 502, training accuracy 1
+completed_epochs 503, training accuracy 1
+completed_epochs 504, training accuracy 1
+completed_epochs 505, training accuracy 1
+completed_epochs 506, training accuracy 1
+completed_epochs 507, training accuracy 1
+completed_epochs 508, training accuracy 1
+completed_epochs 509, training accuracy 1
+completed_epochs 510, training accuracy 1
+testing accuracy 0.98746
+completed_epochs 511, training accuracy 1
+completed_epochs 512, training accuracy 1
+completed_epochs 513, training accuracy 1
+completed_epochs 514, training accuracy 1
+completed_epochs 515, training accuracy 1
+completed_epochs 516, training accuracy 1
+completed_epochs 517, training accuracy 1
+completed_epochs 518, training accuracy 1
+completed_epochs 519, training accuracy 1
+completed_epochs 520, training accuracy 1
+testing accuracy 0.98632
+completed_epochs 521, training accuracy 1
+completed_epochs 522, training accuracy 1
+completed_epochs 523, training accuracy 1
+completed_epochs 524, training accuracy 1
+completed_epochs 525, training accuracy 1
+completed_epochs 526, training accuracy 1
+completed_epochs 527, training accuracy 1
+completed_epochs 528, training accuracy 1
+completed_epochs 529, training accuracy 1
+completed_epochs 530, training accuracy 1
+testing accuracy 0.98618
+completed_epochs 531, training accuracy 1
+completed_epochs 532, training accuracy 1
+completed_epochs 533, training accuracy 1
+completed_epochs 534, training accuracy 1
+completed_epochs 535, training accuracy 1
+completed_epochs 536, training accuracy 1
+completed_epochs 537, training accuracy 1
+completed_epochs 538, training accuracy 1
+completed_epochs 539, training accuracy 1
+completed_epochs 540, training accuracy 1
+testing accuracy 0.98794
+completed_epochs 541, training accuracy 1
+completed_epochs 542, training accuracy 1
+completed_epochs 543, training accuracy 1
+completed_epochs 544, training accuracy 1
+completed_epochs 545, training accuracy 1
+completed_epochs 546, training accuracy 1
+completed_epochs 547, training accuracy 1
+completed_epochs 548, training accuracy 1
+completed_epochs 549, training accuracy 1
+completed_epochs 550, training accuracy 1
+testing accuracy 0.98506
+completed_epochs 551, training accuracy 1
+completed_epochs 552, training accuracy 1
+completed_epochs 553, training accuracy 1
+completed_epochs 554, training accuracy 1
+completed_epochs 555, training accuracy 1
+completed_epochs 556, training accuracy 1
+completed_epochs 557, training accuracy 1
+completed_epochs 558, training accuracy 1
+completed_epochs 559, training accuracy 1
+completed_epochs 560, training accuracy 1
+testing accuracy 0.98718
+completed_epochs 561, training accuracy 1
+completed_epochs 562, training accuracy 1
+completed_epochs 563, training accuracy 1
+completed_epochs 564, training accuracy 1
+completed_epochs 565, training accuracy 1
+completed_epochs 566, training accuracy 1
+completed_epochs 567, training accuracy 1
+completed_epochs 568, training accuracy 1
+completed_epochs 569, training accuracy 1
+completed_epochs 570, training accuracy 1
+testing accuracy 0.98692
+completed_epochs 571, training accuracy 1
+completed_epochs 572, training accuracy 1
+completed_epochs 573, training accuracy 1
+completed_epochs 574, training accuracy 1
+completed_epochs 575, training accuracy 1
+completed_epochs 576, training accuracy 1
+completed_epochs 577, training accuracy 1
+completed_epochs 578, training accuracy 1
+completed_epochs 579, training accuracy 1
+completed_epochs 580, training accuracy 1
+testing accuracy 0.98594
+completed_epochs 581, training accuracy 1
+completed_epochs 582, training accuracy 1
+completed_epochs 583, training accuracy 1
+completed_epochs 584, training accuracy 1
+completed_epochs 585, training accuracy 1
+completed_epochs 586, training accuracy 1
+completed_epochs 587, training accuracy 1
+completed_epochs 588, training accuracy 1
+completed_epochs 589, training accuracy 1
+completed_epochs 590, training accuracy 1
+testing accuracy 0.98716
+completed_epochs 591, training accuracy 1
+completed_epochs 592, training accuracy 1

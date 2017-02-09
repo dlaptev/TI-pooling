@@ -35,7 +35,6 @@ def fc(input, kernel_shape, bias_shape):
 
 '''x should already be reshaped as a 32x32x1 image'''
 def single_branch(x, number_of_filters, number_of_fc_features):
-  # x_image = tf.reshape(x, [-1, 28, 28, 1])
   with tf.variable_scope('conv1'):
     max_pool1 = conv_relu_maxpool(x,
                                   [3, 3, 1, number_of_filters],
@@ -67,7 +66,7 @@ def define_model(x,
   branches = []
   with tf.variable_scope('branches') as scope:  
     for index, tensor_slice in enumerate(splitted):
-      branches.append(single_branch(splitted[0], number_of_filters, number_of_fc_features))
+      branches.append(single_branch(splitted[index], number_of_filters, number_of_fc_features))
       if (index == 0):
         scope.reuse_variables()
     concatenated = tf.pack(branches, axis=2)
