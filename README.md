@@ -2,7 +2,7 @@ TI-pooling
 ==========
 
 This repository contains TensorFlow and Torch7 implementations of TI-pooling (transformation-invariant pooling) from the following paper:
- - "TI-pooling: transformation-invariant pooling for feature learning in Convolutional Neural Networks" D. Laptev, N. Savinov, J.M. Buhmann, M. Pollefeys, CVPR 2016, [pdf](http://dlaptev.org/papers/Laptev16_CVPR.pdf).
+ - "TI-pooling: transformation-invariant pooling for feature learning in Convolutional Neural Networks" D. Laptev, N. Savinov, J.M. Buhmann, M. Pollefeys, CVPR 2016, [pdf](http://laptev.ch/files/laptev16_cvpr.pdf).
 
 **Update February 2017.** TensorFlow implementation is ready! You can independently use either Torch7 or TensorFlow implementations or both: the code is structured very similarly. Scroll to "Instructions for Linux" for the details.
 
